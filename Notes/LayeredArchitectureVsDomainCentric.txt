@@ -1,0 +1,45 @@
+﻿In Layered Architecture, everything is pointed towards inverse and that is towards data itself (Presentation -> Business Logic -> Data Access --> DB), so at some point, all these components will be tightly coupled towards data itself and adding any new feature additions or refactoring piece as well with the newer technologies then it will become little tough for the developers.
+
+So if the application is going to be a complex type which is having a layer of domains or sub-system where each domain is separated and can be individually managed and in those case we need to implement the Microservices strategy.
+
+To understand the Microservices pattern, we need to understand the Domain layer.
+
+
+Domain -> Application -> Presentation | Persistance | Infrastructure
+
+Domain Architectural pattern focuses on the domain itself.
+
+
+In this pattern, the domain is at the center and it is encapsulated inside the application itself and the application layer and all dependencies points towards domain itself.
+
+Domain Layer itself has a variety of implementations.
+
+===Hexagonal Architecture===
+
+In this architecture the domain sits at the center and it's encapsulated inside the application and it is also called as Plugin Architecture which includes ports and adaptors.
+
+Here it means like the outer layer of the architecture adopting the inner layer through application.
+
+The entire gist of this particular system is to make the system independent of any kind of dependency.
+
+So in this case we can entirely test the system in isolation.
+
+===Onion Architecture===
+
+In this architecture also the domain is at the center and surrounded by application layer itself.
+
+This application can be tested in isolation.
+
+
+===Clean Architecture===
+
+Refer this link: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+Domain is at the center and domains are basically represented by entities [Enterprise Business Rules] which is surrounded by the use-cases [Application Business Rules].
+
+Then those are surrounded by Controllers,Gateways,Presenters [Interface Adaptors].
+
+Then the Devices,DB,External Interfaces,UI,Web [Framework and Drivers]
+
+
+

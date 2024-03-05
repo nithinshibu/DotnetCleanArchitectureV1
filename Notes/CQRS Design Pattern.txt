@@ -1,0 +1,9 @@
+﻿CQRS Design Pattern (Command and Query Responsibility Segregation)
+
+Refer: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns
+
+Important principle of this is that it basically segregates our query in one section and commands in other section.
+
+So the basic idea is that whenever the query return a result that do not change the state of the system and they are free from any kind of side effects, where in, commands are basically mean to change the state of the system.
+
+We will be implementing this CQRS System using Mediator pattern.
