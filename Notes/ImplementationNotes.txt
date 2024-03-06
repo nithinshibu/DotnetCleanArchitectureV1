@@ -9,3 +9,12 @@ In Movies.Application -> add the references for Movies.Core.
 In Movies.Infrastructure -> add the references for Movies.Application.
 
 In Movies.API -> add references for Movies.Infrastructure and Movies.Application.
+
+
+Dependencies to be installed inside Movies.Infrastructure :-
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlSercer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.InMemory
