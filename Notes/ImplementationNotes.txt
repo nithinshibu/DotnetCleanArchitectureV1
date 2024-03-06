@@ -18,3 +18,9 @@ Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.SqlSercer
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.InMemory
+
+Dependencies to be installed inside Movies.Application :-
+
+MediatR
+AutoMapper
+FluentValidation
